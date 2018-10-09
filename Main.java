@@ -30,6 +30,13 @@ class Main
          *          call this array ar1.  Print it out below.
          */
         System.out.println("*** PRINTING ar1 *");
+        int[] ar1 = new int[n];
+        
+        for(int i=0; i<n; i++)
+            ar1[i]=i;
+        
+        for (int i=0; i<n; i++)
+            System.out.println("ar1[" + i +"]= "+ar1[i]);
         
                 
         /*
