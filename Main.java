@@ -24,7 +24,7 @@ class Main
         Scanner s = new Scanner(System.in);
         System.out.print(" Please type in an integer :");
         int n = s.nextInt();
-        
+ System.out.println("***Task 1***");
         /*
          * Task 1.  Create an array of integers from 0 to n-1
          *          call this array ar1.  Print it out below.
@@ -48,7 +48,7 @@ class Main
  * Copy the elements of ar1 into ar2.
  */
  
- System.out.println("** ar2 **");
+ System.out.println("***Task 2 ***");
  
  int[] ar2;
  
@@ -95,7 +95,7 @@ class Main
          *         ar1: 1 2 3
          *         ar3: 1 2 3 0 1 2 3
          */
-  System.out.println("***Task4***");
+  System.out.println("***Task 4***");
   int[] ar3= new int[2*ar1.length];
   for (int i=0; i<ar1.length; i++)
     ar3[i]=ar1[i];
@@ -121,14 +121,11 @@ class Main
   
         
         /*
-         * Task 6A. Print the 2nd to (n-1)th elements of ar1
+         Task 6A. Print the 2nd to (n-1)th elements of ar1
+  
          * Task 6B: Print out just the odd numbers in ar1
          * Task 6C: Print out the elements of ar1 when
          *          the indices are multiples of 3
-         *         
-         */
-        
-        /*
          * Task 7.  For each element in ar1, 
          *          If the element is even: leave alone
          *          if the element is odd, multiply by 10
@@ -139,7 +136,33 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
+ System.out.println("***Task 6A***");
+    for (int i=1; i<(ar1.length-1); i++)
+        System.out.println("ar1["+i+"]="+ar1[i]);
         
+ System.out.println("***Task 6B***");
+    for (int i=0; i<ar1.length; i++)
+ {
+        if (ar1[i]%2==1)
+        System.out.println("ar1["+i+"]="+ar1[i]);
+ }
+ 
+ System.out.println("***Task 6C***");
+    for (int i=0; i<ar1.length; i++)
+ {
+        if (i%3==0)
+        System.out.println("ar1["+i+"]="+ar1[i]);
+ }
+ 
+ System.out.println("***Task 7***");
+    for (int i=0; i<ar1.length; i++)
+    {
+        if (ar1[i]%2==1)
+            ar1[i]=ar1*10;
+    }
+    for (int i=0; i<ar1.length; i++)
+        System.out.println("ar1["+i+"]="+ar1[i]);
+       
          /*
           * Task 8
           *    Create an array called ar2odds
@@ -150,7 +173,8 @@ class Main
           *    ar2[2]=2
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
-         
+ System.out.println("***Task 8***");
+    
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
