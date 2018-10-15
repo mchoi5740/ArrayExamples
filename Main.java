@@ -176,7 +176,6 @@ class Main
  System.out.println("***Task 8***");
  int[] ar2odds= new int[ar2.length];
  
- 
     
         /*
          * Task 9. In the array ar2, count how many odd numbers you
